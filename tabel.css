@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2c4ee6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.education-section {
+  width: 90%;
+  max-width: 900px;
+  background: #f4f5f8;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c2f48;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: #2c4ee6;
+  margin: 0.3rem auto 1rem auto;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.education-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.education-table thead {
+  background: linear-gradient(to right, #0066ff, #00aaff);
+  color: white;
+}
+
+.education-table th,
+.education-table td {
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.education-table tbody tr:nth-child(even) {
+  background-color: #f2f8ff;
+}
+
+.education-table tbody tr.highlight {
+  background-color: #e9f4ff;
+}
+
+.education-table th {
+  font-weight: 700;
+}
+
